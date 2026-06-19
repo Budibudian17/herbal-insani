@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { visionStyles } from './styles';
 
 export function VisionSection() {
@@ -40,18 +41,22 @@ export function VisionSection() {
 
             {/* Image Mobile */}
             <div className={visionStyles.image.container}>
-              <img 
+              <Image 
                 src="/img/nilaikamisection.webp" 
                 alt="Vision Section" 
+                width={400}
+                height={300}
                 className={visionStyles.image.image}
               />
             </div>
 
             {/* Image Desktop */}
             <div className={visionStyles.imageDesktop.container}>
-              <img 
+              <Image 
                 src="/img/nilaikamisection.webp" 
                 alt="Vision Section" 
+                width={600}
+                height={400}
                 className={visionStyles.imageDesktop.image}
               />
             </div>

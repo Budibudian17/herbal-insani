@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { getAllBranches } from '@/types/branch';
 import { footerStyles } from './styles';
 
@@ -12,9 +13,11 @@ export function Footer() {
           {/* Left Column - Logo, Description, Social Media */}
           <div className={footerStyles.left.container}>
             <div className={footerStyles.left.logo.container}>
-              <img 
+              <Image 
                 src="/img/logoherbalinsani.webp" 
                 alt="Herbal Insani Logo" 
+                width={160}
+                height={60}
                 className={footerStyles.left.logo.image}
               />
             </div>

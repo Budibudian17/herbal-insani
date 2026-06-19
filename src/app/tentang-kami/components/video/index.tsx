@@ -2,10 +2,12 @@
 
 import { useState } from 'react';
 import { Play, X } from 'lucide-react';
+import Image from 'next/image';
 import { videoStyles } from './styles';
 
 export function VideoSection() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const youtubeVideoId = 'wg30gPtb9eY';
 
   return (
     <section className={videoStyles.section.container}>
@@ -19,13 +21,15 @@ export function VideoSection() {
                 className={videoStyles.video.thumbnail}
                 onClick={() => setIsModalOpen(true)}
               >
-                <img 
-                  src="/img/video-thumbnail.webp" 
+                <Image 
+                  src={`https://img.youtube.com/vi/${youtubeVideoId}/maxresdefault.jpg`}
                   alt="Video Thumbnail" 
+                  width={640}
+                  height={360}
                   className={videoStyles.video.thumbnailImage}
                 />
                 <div className={videoStyles.video.playButton}>
-                  <Play className={videoStyles.video.playIcon} fill="white" />
+                  <Play className={videoStyles.video.playIcon} fill="green" />
                 </div>
               </div>
             </div>
@@ -71,14 +75,12 @@ export function VideoSection() {
             >
               <X className={videoStyles.modal.closeIcon} />
             </button>
-            <video 
-              src="/video/intro-video.mp4" 
-              controls
-              autoPlay
+            <iframe
+              src={`https://www.youtube.com/embed/${youtubeVideoId}?autoplay=1`}
               className={videoStyles.modal.video}
-            >
-              Your browser does not support the video tag.
-            </video>
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
           </div>
         </div>
       )}

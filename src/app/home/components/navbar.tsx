@@ -13,7 +13,7 @@ export function Navbar() {
   const navItems = [
     { name: 'Beranda', href: '/' },
     { name: 'Tentang Kami', href: '/tentang-kami' },
-    { name: 'Layanan', href: '#services' },
+    { name: 'Layanan', href: '/layanan' },
     { name: 'Cabang', href: '#branches' },
     { name: 'Kontak', href: '#contact' },
   ];

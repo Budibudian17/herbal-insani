@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { introStyles } from './styles';
 
 export function IntroSection() {
@@ -9,9 +10,11 @@ export function IntroSection() {
           <div className={introStyles.grid.container}>
             {/* Image */}
             <div className={introStyles.image.container}>
-              <img 
+              <Image 
                 src="/img/aboutuspage.webp" 
                 alt="Tentang Kami Section" 
+                width={600}
+                height={400}
                 className={introStyles.image.image}
               />
             </div>
@@ -32,9 +35,11 @@ export function IntroSection() {
               </p>
               <div className={introStyles.header.ceo}>
                 <p className={introStyles.header.ceoName}>PT. Herbal Insani</p>
-                <img 
+                <Image 
                   src="/img/signaturelow.webp" 
                   alt="CEO Signature" 
+                  width={200}
+                  height={80}
                   className={introStyles.header.signature}
                 />
               </div>

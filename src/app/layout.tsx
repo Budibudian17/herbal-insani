@@ -19,6 +19,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Herbal Insani - Rumah Sehat Herbal Terpadu",
   description: "Sistem manajemen klinik herbal Rumah Sehat Herbal Insani dengan pelayanan kesehatan terpadu",
+  icons: {
+    icon: "/img/logoherbalinsani.ico",
+  },
 };
 
 export default function RootLayout({

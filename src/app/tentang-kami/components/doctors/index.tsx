@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { doctorsStyles } from './styles';
 
 export function DoctorsSection() {
@@ -11,9 +12,11 @@ export function DoctorsSection() {
           Tim dokter kami terdiri dari para profesional yang bersertifikat dan berpengalaman dalam bidang pengobatan herbal. Mereka berdedikasi untuk memberikan pelayanan kesehatan terbaik dengan pendekatan holistik yang mengutamakan kesejahteraan pasien.
         </p>
         <div className={doctorsStyles.image.container}>
-          <img 
+          <Image 
             src="/img/dokterberpengalaman.webp" 
             alt="Tim Dokter Herbal Insani" 
+            width={1920}
+            height={1080}
             className={doctorsStyles.image.img}
           />
         </div>
