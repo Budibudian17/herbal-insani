@@ -4,7 +4,7 @@
 
 export const branchesStyles = {
   section: {
-    container: 'py-12 md:py-16 bg-white dark:bg-gray-900',
+    container: 'py-12 md:py-16 bg-gray-100 dark:bg-gray-900',
   },
   container: {
     wrapper: 'max-w-6xl mx-auto px-4 md:px-6',

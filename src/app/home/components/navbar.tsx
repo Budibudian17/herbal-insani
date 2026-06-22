@@ -14,7 +14,7 @@ export function Navbar() {
     { name: 'Beranda', href: '/' },
     { name: 'Tentang Kami', href: '/tentang-kami' },
     { name: 'Layanan', href: '/layanan' },
-    { name: 'Cabang', href: '#branches' },
+    { name: 'Cabang', href: '/cabang' },
     { name: 'Kontak', href: '#contact' },
   ];
 
