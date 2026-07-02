@@ -4,7 +4,7 @@
 
 export const faqStyles = {
   section: {
-    container: 'py-16 md:py-20 bg-white',
+    container: 'py-16 md:py-20 bg-gray-100',
   },
   container: {
     wrapper: 'max-w-4xl mx-auto px-4 md:px-6',
@@ -18,8 +18,8 @@ export const faqStyles = {
     container: 'space-y-4',
   },
   item: {
-    container: 'border border-gray-200 rounded-lg overflow-hidden',
-    button: 'w-full flex items-center justify-between p-4 text-left hover:bg-gray-50 transition-colors',
+    container: 'border border-black rounded-lg overflow-hidden',
+    button: 'w-full flex items-center justify-between p-4 text-left bg-gray-50 hover:bg-gray-100 transition-colors',
     question: 'font-semibold text-gray-900',
     icon: 'w-5 h-5 text-gray-500',
     answer: 'p-4 pt-0 text-gray-600 leading-relaxed',

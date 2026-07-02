@@ -42,12 +42,19 @@ export function HowItWorksSection() {
         <div className={howItWorksStyles.steps.container}>
           {steps.map((step, index) => {
             const Icon = step.icon;
+            const isLast = index === steps.length - 1;
+            const useDashed = index % 2 === 0;
             return (
               <div key={index} className={howItWorksStyles.step.container}>
-                <div className={howItWorksStyles.step.number}>{step.step}</div>
-                <div className={howItWorksStyles.step.iconWrapper}>
-                  <Icon className={howItWorksStyles.step.icon} />
+                <div className={howItWorksStyles.step.numberWrapper}>
+                  <div className={howItWorksStyles.step.number}>{step.step}</div>
+                  <div className={howItWorksStyles.step.iconWrapper}>
+                    <Icon className={howItWorksStyles.step.icon} />
+                  </div>
                 </div>
+                {!isLast && (
+                  <div className={useDashed ? howItWorksStyles.step.connectorDashed : howItWorksStyles.step.connector}></div>
+                )}
                 <h3 className={howItWorksStyles.step.title}>{step.title}</h3>
                 <p className={howItWorksStyles.step.description}>{step.description}</p>
               </div>

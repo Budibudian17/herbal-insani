@@ -4,10 +4,12 @@
 
 export const ctaStyles = {
   section: {
-    container: 'py-16 md:py-20 bg-green-600',
+    container: 'relative bg-fixed bg-center bg-cover py-16 md:py-20',
+    backgroundImage: "url('/img/footerbg.webp')",
+    overlay: 'absolute inset-0 bg-green-600/80',
   },
   container: {
-    wrapper: 'max-w-6xl mx-auto px-4 md:px-6',
+    wrapper: 'relative z-10 max-w-6xl mx-auto px-4 md:px-6',
   },
   content: {
     container: 'text-center',

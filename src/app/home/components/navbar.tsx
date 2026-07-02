@@ -15,6 +15,7 @@ export function Navbar() {
     { name: 'Tentang Kami', href: '/tentang-kami' },
     { name: 'Layanan', href: '/layanan' },
     { name: 'Cabang', href: '/cabang' },
+    { name: 'Pendaftaran', href: '/register' },
     { name: 'Kontak', href: '#contact' },
   ];
 
@@ -68,9 +69,9 @@ export function Navbar() {
                   </a>
                 );
               })}
-              <button className={navbarStyles.nav.button}>
+              <a href="/register" className={navbarStyles.nav.button}>
                 Daftarkan Diri
-              </button>
+              </a>
             </div>
           </div>
 
@@ -118,9 +119,9 @@ export function Navbar() {
                 );
               })}
               <div className={navbarStyles.mobile.buttonWrapper}>
-                <button className={navbarStyles.nav.button}>
+                <a href="/register" className={navbarStyles.nav.button}>
                   Daftarkan Diri
-                </button>
+                </a>
               </div>
             </div>
           )}

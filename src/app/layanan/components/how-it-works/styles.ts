@@ -15,15 +15,18 @@ export const howItWorksStyles = {
     description: 'text-base md:text-lg text-gray-600 max-w-2xl mx-auto',
   },
   steps: {
-    container: 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6',
+    container: 'relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8',
   },
   step: {
-    container: 'relative bg-gray-50 rounded-lg p-6 text-center',
-    number: 'absolute -top-3 -left-3 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center text-sm font-bold',
-    iconWrapper: 'w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4',
-    icon: 'w-6 h-6 text-green-600',
+    container: 'relative text-center',
+    numberWrapper: 'relative mx-auto mb-4',
+    number: 'w-16 h-16 bg-green-600 text-white rounded-full flex items-center justify-center text-xl font-bold shadow-lg',
+    iconWrapper: 'absolute inset-0 bg-green-700 rounded-full flex items-center justify-center',
+    icon: 'w-8 h-8 text-white',
     title: 'text-lg font-semibold text-gray-900 mb-2',
-    description: 'text-sm text-gray-600',
+    description: 'text-sm text-gray-600 leading-relaxed',
+    connector: 'hidden lg:block absolute top-8 left-full w-full h-0.5 bg-gradient-to-r from-green-200 via-green-400 to-green-200',
+    connectorDashed: 'hidden lg:block absolute top-8 left-full w-full h-0.5 border-t-2 border-dashed border-green-300',
   },
 } as const;
 

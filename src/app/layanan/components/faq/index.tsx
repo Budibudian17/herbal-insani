@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     question: 'Apakah perlu booking sebelum datang?',
-    answer: 'Kami sangat menyarankan booking terlebih dahulu untuk menghindari antrean dan memastikan ketersediaan terapis. Anda bisa booking via WhatsApp atau telepon.',
+    answer: 'Kami sangat menyarankan booking terlebih dahulu untuk menghindari antrean dan memastikan ketersediaan terapis. Anda bisa booking via Website, WhatsApp atau telepon.',
   },
   {
     question: 'Apakah ada garansi untuk hasil terapi?',
